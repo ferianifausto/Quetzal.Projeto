@@ -1,0 +1,104 @@
+/* #region global */
+/* usar asterisco na frente das chaves indica a edição na página inteira */
+*{
+    font-family: bahnschrift;
+    margin: 0; /*  */
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* #endregion */
+
+ /* #region cabeçalho/header */
+ .topo{
+    position: fixed; /* fixação do elemnto na pagina para edição */
+    top: 50px; /* espaçamento no topo da pagina */
+    left: 0px; /* espaçamento na esquerda da pagina */
+    width: 100%; /* tamanho proporcional do tamanho da pagina */
+    height: 10vh;
+    background-color: black;
+    /* opacity: 30%; */
+    padding: 20px 120px; /* posição dos elementos no cabeçalho */
+    display:inline;
+    text-align: center; 
+    justify-content: space-between;
+
+    .logo
+    
+ }
+   /* utiliza ponto na frente para referenciar uma classe */
+ /* .logo{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .3s;
+ } */
+ .logo img{
+    width: 150px;
+    /* margin-right: 1500px; */
+ }
+ nav a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    transition: .3s;
+    font-size: 32px;
+ }
+   /* passar o mouse */
+ nav a:hover{
+   color: aqua;
+   font-size: 20px;
+ }
+
+ .logo:hover{
+   font-size: 50px;
+ }
+ /* #endregion */
+
+ /* #region section */
+ #inicio{
+   
+   min-height: 100vh; /* Ajuste da altura minima da tela */
+   background-color: #1f242d;
+   display: flex;
+   justify-content: center; /* centraliza horizontal */
+   align-items: center; /* centraliza vertical */
+   color: white;
+   font-size: 100px;
+   font-weight: 500;
+ }
+#projetos{
+   min-height: 100vh; /* Ajuste da altura minima da tela */
+   background-color: #445168;
+   display: flex;
+   justify-content: center; /* centraliza horizontal */
+   align-items: center; /* centraliza vertical */
+   color: white;
+   font-size: 100px;
+   font-weight: 500;
+}
+#contato{
+   min-height: 100vh; /* Ajuste da altura minima da tela */
+   background-color: #707988;
+   display: flex;
+   justify-content: center; /* centraliza horizontal */
+   align-items: center; /* centraliza vertical */
+   color: white;
+   font-size: 100px;
+   font-weight: 500;
+}
+#sobremim{
+   min-height: 100vh; /* Ajuste da altura minima da tela */
+   background-color: #999b9e;
+   display: flex;
+   justify-content: center; /* centraliza horizontal */
+   align-items: center; /* centraliza vertical */
+   color: white;
+   font-size: 100px;
+   font-weight: 500;
+}
+
+ /* #endregion */
