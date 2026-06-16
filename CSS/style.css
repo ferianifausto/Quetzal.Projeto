@@ -23,7 +23,9 @@
     text-align: center; 
     justify-content: space-between;
 
-    .logo
+    .logo{
+
+    }
     
  }
    /* utiliza ponto na frente para referenciar uma classe */
@@ -63,12 +65,12 @@
    
    min-height: 100vh; /* Ajuste da altura minima da tela */
    background-color: #1f242d;
-   display: flex;
-   justify-content: center; /* centraliza horizontal */
-   align-items: center; /* centraliza vertical */
-   color: white;
-   font-size: 100px;
-   font-weight: 500;
+   /* display: flex; */
+   /* justify-content: center; centraliza horizontal */
+   /* align-items: center; centraliza vertical */
+   /* color: white; */
+   /* font-size: 100px; */
+   /* font-weight: 500; */
  }
 #projetos{
    min-height: 100vh; /* Ajuste da altura minima da tela */
