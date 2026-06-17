@@ -73,62 +73,55 @@
  
     </section>
  
-    <section id="contato"> <!-- página 2 -->
- 
-        <form name="frmContato" id="frmContato" method="get" action="sucesso.html">
-            <label for="Nome">Nome</label><br>
-            <input type="text" name="Nome" id="Nome">
-            <br>
- 
-            <label for="Telefone">Telefone</label><br>
-            <input type="text" name="Telefone" id="Telefone">
-            <br>
- 
-            <label for="Email">E-mail</label><br>
-            <input type="text" name="Email" id="Email">
-            <br>
- 
-            <label for="Cpf">CPF</label><br>
-            <input type="text" name="Cpf" id="Cpf">
-            <br>
- 
-            <label for="Bairro">Bairro</label><br>
-            <select name="Bairro" id="Bairro">
-                <option value="0">Selecione uma Opção</option>
-                <option value="1">São Miguel</option>
-                <option value="2">Itaim Paulista</option>
-                <option value="3">Penha</option>
-            </select>
-            <br>
- 
-            <label>Forma de Contato</label><br>
-            <input type="radio" name="FormaContato" value="WhatsApp" id="opcWhatsApp"><label
-                for="opcWhatsApp">WhatsApp</label>
-            <input type="radio" name="FormaContato" value="Telefone" id="opcTelefone"><label
-                for="opcTelefone">Telefone</label>
-            <input type="radio" name="FormaContato" value="Email" id="opcEmail"><label for="opcEmail">Email</label>
-            <br>
- 
-            <label>Serviço de Interesse</label><br>
-            <input type="checkbox" name="Servico" id="Cabeleireiro">
-            <label for="Cabeleireiro">Cabeleireiro</label>
- 
-            <input type="checkbox" name="Servico" id="Manicure">
-            <label for="Manicure">Manicure</label>
- 
-            <input type="checkbox" name="Servico" id="Maquiagem">
-            <label for="Maquiagem">Maquiagem</label>
- 
-            <input type="checkbox" name="Servico" id="Podologia">
-            <label for="Podologia">Podologia</label>
- 
-            <input type="checkbox" name="Servico" id="Sobrancelha">
-            <label for="Sobrancelha">Sobrancelha</label>
-            <br><br>
- 
-            <input type="button" name="BtnEnviar" id="BtnEnviar" value="Enviar" onclick="validarFormulario()">
-        </form>
-    </section>
+<section id="contato"> <!-- página 2 -->
+
+  <div class="container-contato">
+
+    <!-- IMAGEM -->
+    <div class="imagem">
+      <img src="./img/JORDANA 2024/JORDANA 2024/SALA9.jpg" alt="Imagem_contato">
+    </div>
+
+    <!-- CONTEÚDO -->
+    <div class="conteudo">
+
+      <h3>Vamos falar sobre seu projeto</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque nisi in perferendis error necessitatibus aliquid.</p>
+
+      <form name="frmContato" id="frmContato" method="get" action="sucesso.html">
+
+        <label for="Nome">Nome</label>
+        <input type="text" name="Nome" id="Nome">
+
+        <label for="Email">E-mail</label>
+        <input type="email" name="Email" id="Email">
+
+        <label for="Telefone">Telefone</label>
+        <input type="text" name="Telefone" id="Telefone">
+
+        <label for="Ajuda">Como podemos ajudar</label>
+        <input type="text" name="Ajuda" id="Ajuda">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, sunt!</p>
+
+        <div class="checkbox">
+          <input type="checkbox" id="email">
+          <label for="email">E-mail</label>
+
+          <input type="checkbox" id="telefone">
+          <label for="telefone">Telefone</label>
+
+          <input type="checkbox" id="whatsapp">
+          <label for="whatsapp">Whatsapp</label>
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
  
     <section id="sobremim">
         <ul>
