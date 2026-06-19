@@ -1,64 +1,127 @@
 /* #region global */
 /* usar asterisco na frente das chaves indica a edição na página inteira */
-*{
-    font-family: bahnschrift;
-    margin: 0; /*  */
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+   font-family: bahnschrift;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+ 
+   h2 {
+      color: #6b7556;
+      font-size: 3rem;
+   }
+ 
+   p {
+      color: black;
+      font-size: 1.5rem;
+   }
+ 
+ 
+}
+ 
+:root {
+   --clr-primary: #F0C4CB;
+   --clr-secondary: #C87D87;
+   --clr-tertiary: #FBEAD6;
+   --clr-quaternary: #6B7556;
+   --clr-quinary: #E5BCA9;
+}
+ 
+html {
+   scroll-behavior: smooth;
+}
+ 
+/* #region topo */
+.topo {
+   width: 100%;
+   height: 100vh;
+   background: url('../img/COZ\ 1.jpg');
+   background-color: var(--clr-quinary);
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   display: flex;
+   flex-direction: column;
+ 
+   .navbar {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 10px 200px;
+      margin: 20px;
+      border-radius: 12px;
+        background-color: rgba(251, 234, 214, 0.42);
+        width: calc(100% - 60px);
+        backdrop-filter: blur(1px);
+        gap: 40px;
+   }
+ 
+   .LogoWhat {
+      a img {
+         width: 90px;
+         height: auto;
+         display: block;
+         order: 3;
+         transition: all 0.3s ease;
+      }
+ 
+      a:hover img {
+         transform: scale(1.20);
+      }
+   }
+ 
+   .LogoInsta {
+      a img {
+         width: 52px;
+         height: auto;
+         display: block;
+         gap: 20px;
+         margin-right: 50px;
+         transition: all 0.3s ease;
+      }
+ 
+      a:hover img {
+         transform: scale(1.20);
+      }
+   }
+ 
+   .LogoNav {
+      a img {
+         width: 300px;
+         height: auto;
+         display: block;
+         order: 1;
+      }
+   }
+ 
+   .menu-links {
+ 
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-left: auto;
+      margin-right: 60px;
+      display: flex;
+      gap: 30px;
+ 
+ 
+      li a {
+         color: #FFFFFF;
+         text-decoration: none;
+         font-family: sans-serif;
+         font-weight: 650;
+         font-size: 1.8rem;
+         transition: color 0.3s ease;
+         white-space: nowrap;
+ 
+         &:hover {
+            color: var(--clr-primary);
+         }
+      }
+   }
 }
 /* #endregion */
-
- /* #region cabeçalho/header */
- .topo{
-    position: fixed; /* fixação do elemnto na pagina para edição */
-    top: 50px; /* espaçamento no topo da pagina */
-    left: 0px; /* espaçamento na esquerda da pagina */
-    width: 100%; /* tamanho proporcional do tamanho da pagina */
-    height: 10vh;
-    background-color: black;
-    /* opacity: 30%; */
-    padding: 20px 120px; /* posição dos elementos no cabeçalho */
-    display:inline;
-    text-align: center; 
-    justify-content: space-between;
-
-    .logo{
-
-    }
-    
- }
-   /* utiliza ponto na frente para referenciar uma classe */
- /* .logo{
-    color: white;
-    font-size: 25px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: .3s;
- } */
- .logo img{
-    width: 150px;
-    /* margin-right: 1500px; */
- }
- nav a{
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
-    margin-bottom: 10px;
-    margin-left: 100px;
-    transition: .3s;
-    font-size: 32px;
- }
-   /* passar o mouse */
- nav a:hover{
-   color: aqua;
-   font-size: 20px;
- }
-
- .logo:hover{
-   font-size: 50px;
- }
- /* #endregion */
 
  /* #region section */
  #inicio{
@@ -78,10 +141,98 @@
    display: flex;
    justify-content: center; /* centraliza horizontal */
    align-items: center; /* centraliza vertical */
-   color: white;
+   color: black;
    font-size: 100px;
    font-weight: 500;
 }
+#apresentacao h2{
+   font-size: 100px;
+   text-align: center;
+   background-color: bisque;
+}
+#apresentacao p{
+   font-size: 70px;
+   text-align: center;
+   background-color: bisque;
+}
+
+#portfolio ul li{
+   min-height: 40vh; /* Ajuste da altura minima da tela */
+   background-color: bisque;
+   display: flex;
+   justify-content: center; /* centraliza horizontal */
+   align-items: center; 
+   /* color: white; */
+   font-size: 100px;
+   font-weight: 500;
+   /* margin-top: 100px; */
+  
+   
+}
+
+#portfolio ul li img{
+   width: 50%;
+   padding: 20px 80px;
+   
+}
+  
+
+.Projeto1 {
+   width: 30%;
+   font-size: 30px;
+   background-color: bisque;
+   color: black;
+   margin-left: 20px;
+   margin-right: 20px;
+   gap: 10px;
+
+}
+
+.btnDefault{
+
+background-color:#6b7556;
+color:white;
+padding:1.2em 2em;
+font-size:50% ;
+border-radius: 10px;
+transition: .5s;
+text-align: center;
+}
+
+.Projeto2 {
+   width: 30%;
+   font-size: 30px;
+   background-color: bisque;
+   color: black;
+   margin-left: 10px;
+   gap: 40px;
+
+   
+}
+
+.btnDefault{
+
+background-color:#6b7556;
+color: white;
+padding:1.2em 2em;
+font-size:50% ;
+border-radius: 10px;
+transition: .5s;
+text-align: center;
+transition: .5s;
+}
+
+.btnDefault:hover{
+   font-size: 60%;
+    color: bisque;
+    background: #c87d87;
+    padding:1.2em 2em;
+    transition: .5s;
+   
+    
+}
+
+
 #contato{
    min-height: 100vh; /* Ajuste da altura minima da tela */
    background-color: #707988;
