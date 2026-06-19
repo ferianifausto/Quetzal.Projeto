@@ -1,94 +1,148 @@
 /* #region global */
 /* usar asterisco na frente das chaves indica a edição na página inteira */
-*{
-    font-family: bahnschrift;
-    margin: 0; /*  */
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+  font-family: bahnschrift;
+  margin: 0;
+  /*  */
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 
 }
-    :root {
-      --cor-primaria: #f0c4cb;
-      --cor-secudaria: #c87d87;
-      --cor-fundo: #fbead6;
-      --cor-terciaria: #6b7556;
-    }
+
+:root {
+  --cor-primaria: #f0c4cb;
+  --cor-secudaria: #c87d87;
+  --cor-fundo: #fbead6;
+  --cor-terciaria: #6b7556;
+}
+
+.btnDefault {
+  padding: 20px 30px;
+  border: 1px solid var(--cor-secudaria);
+  background: var(--cor-terciaria);
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  transition: all .3s;
+  text-decoration-line: none;
+
+  &:hover {
+    cursor: pointer;
+    border: 1px solid var(--cor-terciaria);
+    background-color: var(--cor-secudaria);
+    color: black;
+
+  }
+}
+
+.btnWhatsapp {
+  padding: 20px 30px;
+  border: 1px solid var(--cor-secudaria);
+  background: var(--cor-terciaria);
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  transition: all .3s;
+  text-decoration-line: none;
+
+  &:hover {
+    cursor: pointer;
+    border: 1px solid var(--cor-terciaria);
+    background-color: var(--cor-secudaria);
+    color: black;
+
+  }
+}
+
 /* #endregion */
 
- /* #region cabeçalho/header */
- .topo{
-    position: fixed; /* fixação do elemnto na pagina para edição */
-    top: 50px; /* espaçamento no topo da pagina */
-    left: 0px; /* espaçamento na esquerda da pagina */
-    width: 100%; /* tamanho proporcional do tamanho da pagina */
-    height: 10vh;
-    background-color: black;
-    /* opacity: 30%; */
-    padding: 20px 120px; /* posição dos elementos no cabeçalho */
-    display:inline;
-    text-align: center; 
-    justify-content: space-between;
+/* #region cabeçalho/header */
+.topo {
+  position: fixed;
+  /* fixação do elemnto na pagina para edição */
+  top: 50px;
+  /* espaçamento no topo da pagina */
+  left: 0px;
+  /* espaçamento na esquerda da pagina */
+  width: 100%;
+  /* tamanho proporcional do tamanho da pagina */
+  height: 10vh;
+  background-color: black;
+  /* opacity: 30%; */
+  padding: 20px 120px;
+  /* posição dos elementos no cabeçalho */
+  display: inline;
+  text-align: center;
+  justify-content: space-between;
 
-    .logo{
+  .logo {}
 
-    }
-    
- }
-   /* utiliza ponto na frente para referenciar uma classe */
- /* .logo{
+}
+
+/* utiliza ponto na frente para referenciar uma classe */
+/* .logo{
     color: white;
     font-size: 25px;
     font-weight: 600;
     text-decoration: none;
     transition: .3s;
  } */
- .logo img{
-    width: 150px;
-    /* margin-right: 1500px; */
- }
- nav a{
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
-    margin-bottom: 10px;
-    margin-left: 100px;
-    transition: .3s;
-    font-size: 32px;
- }
-   /* passar o mouse */
- nav a:hover{
-   color: aqua;
-   font-size: 20px;
- }
-
- .logo:hover{
-   font-size: 50px;
- }
- /* #endregion */
-
- /* #region section */
- #inicio{
-   
-   min-height: 100vh; /* Ajuste da altura minima da tela */
-   background-color: #1f242d;
-   /* display: flex; */
-   /* justify-content: center; centraliza horizontal */
-   /* align-items: center; centraliza vertical */
-   /* color: white; */
-   /* font-size: 100px; */
-   /* font-weight: 500; */
- }
-#projetos{
-   min-height: 100vh; /* Ajuste da altura minima da tela */
-   background-color: #445168;
-   display: flex;
-   justify-content: center; /* centraliza horizontal */
-   align-items: center; /* centraliza vertical */
-   color: white;
-   font-size: 100px;
-   font-weight: 500;
+.logo img {
+  width: 150px;
+  /* margin-right: 1500px; */
 }
+
+nav a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  transition: .3s;
+  font-size: 32px;
+}
+
+/* passar o mouse */
+nav a:hover {
+  color: aqua;
+  font-size: 20px;
+}
+
+.logo:hover {
+  font-size: 50px;
+}
+
+/* #endregion */
+
+/* #region section */
+#inicio {
+
+  min-height: 100vh;
+  /* Ajuste da altura minima da tela */
+  background-color: #1f242d;
+  /* display: flex; */
+  /* justify-content: center; centraliza horizontal */
+  /* align-items: center; centraliza vertical */
+  /* color: white; */
+  /* font-size: 100px; */
+  /* font-weight: 500; */
+}
+
+#projetos {
+  min-height: 100vh;
+  /* Ajuste da altura minima da tela */
+  background-color: #445168;
+  display: flex;
+  justify-content: center;
+  /* centraliza horizontal */
+  align-items: center;
+  /* centraliza vertical */
+  color: white;
+  font-size: 100px;
+  font-weight: 500;
+}
+
 /* #contato{
    min-height: 100vh; /* Ajuste da altura minima da tela 
    background-color: #707988;
@@ -99,23 +153,26 @@
    font-size: 100px;
    font-weight: 500; 
 }*/
-#sobremim{
-   min-height: 100vh; /* Ajuste da altura minima da tela */
-   background-color: #999b9e;
-   display: flex;
-   justify-content: center; /* centraliza horizontal */
-   align-items: center; /* centraliza vertical */
-   color: white;
-   font-size: 100px;
-   font-weight: 500;
+#sobremim {
+  min-height: 100vh;
+  /* Ajuste da altura minima da tela */
+  background-color: #999b9e;
+  display: flex;
+  justify-content: center;
+  /* centraliza horizontal */
+  align-items: center;
+  /* centraliza vertical */
+  color: white;
+  font-size: 100px;
+  font-weight: 500;
 }
 
- /* #endregion */
+/* #endregion */
 
 /* #region contato */
 
 .container-contato {
-   background-color: var(--cor-fundo);
+  background-color: var(--cor-fundo);
   display: flex;
   align-items: center;
   gap: 40px;
@@ -123,21 +180,27 @@
 }
 
 .imagem img {
-   margin-left: 150px;
-   margin-right: 50px;
+  margin-left: 150px;
+  margin-right: 50px;
   width: 500px;
   height: 500px;
-   /* max-width: 100%; */
+  /* max-width: 100%; */
   border-radius: 10px;
 }
 
 .conteudo {
-   color: red;
   max-width: 500px;
 }
 
+.conteudo h2 {
+  max-width: 100%;
+  color: var(--cor-secudaria);
+  margin: 20px 30px;
+  font-size: 30px;
+}
+
 #frmContato {
-   color: var(--cor-secudaria);
+  color: var(--cor-secudaria);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -146,7 +209,7 @@
 
 #frmContato input[type="text"],
 #frmContato input[type="email"] {
-   background-color: var(--cor-fundo);
+  background-color: var(--cor-fundo);
   padding: 10px;
   border: 1px solid var(--cor-secudaria);
   border-radius: 5px;
@@ -155,7 +218,18 @@
 .checkbox {
   display: flex;
   gap: 15px;
-  margin-top: 10px;
+  margin: 10px;
+}
+
+.btnDefault {
+  padding: 10px 30px;
+
+}
+
+.btnWhatsapp {
+  display: inline-flex;
+  padding: 10px 30px;
+  gap: 8px;
 }
 
 /* #endregion */
