@@ -14,7 +14,7 @@
  
    p {
       color: black;
-      font-size: 1.5rem;
+      font-size: 1.0rem;
    }
  
  
@@ -153,10 +153,13 @@ html {
    font-size: 100px;
    font-weight: 500;
 }
+
+/* #region portifolio */
 #apresentacao h2{
    font-size: 100px;
    text-align: center;
    background-color: bisque;
+   color: black;
 }
 #apresentacao p{
    font-size: 70px;
@@ -168,19 +171,19 @@ html {
    min-height: 40vh; /* Ajuste da altura minima da tela */
    background-color: bisque;
    display: flex;
-   justify-content: center; /* centraliza horizontal */
+   justify-content: center;      /* centraliza horizontal */
    align-items: center; 
-   /* color: white; */
    font-size: 100px;
    font-weight: 500;
    /* margin-top: 100px; */
   
-   
-}
+   }
 
 #portfolio ul li img{
    width: 50%;
-   padding: 20px 80px;
+   padding: 20px 70px;
+   margin-left: 20px;
+   margin-right: 100px;
    
 }
   
@@ -190,40 +193,36 @@ html {
    font-size: 30px;
    background-color: bisque;
    color: black;
-   margin-left: 20px;
+   margin-left: 100px;
    margin-right: 20px;
    gap: 10px;
 
 }
-
-.btnDefault{
-
-background-color:#6b7556;
-color:white;
-padding:1.2em 2em;
-font-size:50% ;
-border-radius: 10px;
-transition: .5s;
-text-align: center;
+.Projeto1 h1{
+   font-size: 50px;
 }
+
 
 .Projeto2 {
    width: 30%;
    font-size: 30px;
    background-color: bisque;
    color: black;
-   margin-left: 10px;
-   gap: 40px;
-
-   
+   /* margin-left: 5px; */
+   /* margin-right: 80px; */
+   gap: 30px;
+  padding: 10px 5px;
+   }
+.Projeto2 h1{
+   font-size: 50px;
 }
-
+   
 .btnDefault{
 
 background-color:#6b7556;
 color: white;
 padding:1.2em 2em;
-font-size:50% ;
+font-size:80% ;
 border-radius: 10px;
 transition: .5s;
 text-align: center;
@@ -239,7 +238,7 @@ transition: .5s;
    
     
 }
-
+/* #endregion */
 
 #contato{
    min-height: 100vh; /* Ajuste da altura minima da tela */
