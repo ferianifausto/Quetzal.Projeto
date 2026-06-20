@@ -327,7 +327,8 @@ html {
 /* #region contato */
 
 .container-contato {
-  background-color: var(--cor-fundo);
+  background: 100%;
+  background-color: var(--clr-tertiary);
   display: flex;
   align-items: center;
   gap: 40px;
@@ -378,11 +379,12 @@ html {
 
 .btnDefault {
   padding: 10px 30px;
-
+  font-size: 25px;
 }
 
-.btnWhatsapp {
+li .btnWhatsapp {
   display: inline-flex;
+  font-size: 25px;
   padding: 10px 30px;
   gap: 8px;
 }
