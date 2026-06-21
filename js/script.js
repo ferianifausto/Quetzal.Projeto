@@ -48,3 +48,24 @@ function validarEmail(email){
 }
 
 //#endregion
+
+//#region Instagram 
+function rolarEsquerda() {
+    const galeria = document.getElementById("galeria");
+
+    galeria.scrollBy({
+        left: -300,
+        behavior: "smooth"
+    });
+}
+
+function rolarDireita() {
+    const galeria = document.getElementById("galeria");
+
+    galeria.scrollBy({
+        left: 300,
+        behavior: "smooth"
+    });
+}
+//#endregion
+
