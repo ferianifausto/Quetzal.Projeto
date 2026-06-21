@@ -6,16 +6,17 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  /* background-color: var(--clr-tertiary); */
   
   h2 {
     color: #6b7556;
-    font-size: 3rem;
+    font-size: 100px;
     text-align: center;
   }
 
   p {
     color: black;
-    font-size: 1.0rem;
+    font-size: 2rem;
   }
 
 
@@ -179,12 +180,12 @@ ul, ol{
 /* #region section */
 #inicio {
 
-  min-height: 500px;
+  min-height: auto;
   background-color: #e5bca9;
   text-align: center;
   margin-top: 0%;
   /* height: 50vh; */
-  padding: 0 300px 0 300px;
+  padding: 50px 300px 50px 300px;
   width: 100%;
   /* font-size: 3rem; */
   display: flex;
@@ -194,11 +195,20 @@ ul, ol{
   /* font-size: 100px; */
   /* font-weight: 500; */
   p{
-    font-size: 2rem;
+    /* font-size: 2rem; */
     font-weight: 500;
   }
 }
 
+#projetos{
+  margin-top: 5vh;
+ 
+
+  p{
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+}
 
 .Imagens1-2 {
 
@@ -229,27 +239,27 @@ ul, ol{
 
 /* #region portifolio */
 #portfolio{
-   background-color: bisque;
+   background-color: var(--clr-tertiary);
 }
 .apresentacao h2 {
    width: 100%;
-  font-size: 100px;
+  /* font-size: 100px; */
   text-align: center;
-  background-color: bisque;
+  /* background-color: bisque; */
   color: black;
   
 }
 
 .apresentacao p {
-  font-size: 50px;
+  /* font-size: 50px; */
   text-align: center;
-  background-color: bisque;
+  /* background-color: bisque; */
 }
 
 #portfolio ul li {
   min-height: 40vh;
   /* Ajuste da altura minima da tela */
-  background-color: bisque;
+  /* background-color: bisque; */
   display: flex;
   justify-content: center;
   /* centraliza horizontal */
@@ -272,7 +282,7 @@ ul, ol{
 .Projeto1 {
   width: 30%;
   font-size: 30px;
-  background-color: bisque;
+  /* background-color: bisque; */
   color: black;
   margin-left: 100px;
   margin-right: 20px;
@@ -288,7 +298,7 @@ ul, ol{
 .Projeto2 {
   width: 30%;
   font-size: 30px;
-  background-color: bisque;
+  /* background-color: bisque; */
   color: black;
   /* margin-left: 5px; */
   /* margin-right: 80px; */
