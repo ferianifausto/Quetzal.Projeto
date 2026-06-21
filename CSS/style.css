@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-
+  
   h2 {
     color: #6b7556;
     /* font-size: 3rem; */
@@ -32,6 +32,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* #endregion */
 /* #region topo */
 .topo {
   width: 100%;
@@ -172,14 +173,14 @@ html {
 /* #region section */
 #inicio {
 
-  min-height: 20vh;
+  min-height: 30vh;
   background-color: #e5bca9;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 0%;
   /* height: 50vh; */
   /* padding: 20%; */
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,7 +192,7 @@ html {
 .Imagens1-2 {
 
   width: 100%;
-  height: 520px;
+  height: 820px;
   display: flex;
   justify-content: center;
   /* centraliza horizontal */
@@ -200,18 +201,24 @@ html {
   color: black;
   font-size: 100px;
   font-weight: 500;
+  
 }
 
 /* #region portifolio */
-#apresentacao h2 {
+#portfolio{
+   background-color: bisque;
+}
+.apresentacao h2 {
+   width: 100%;
   font-size: 100px;
   text-align: center;
   background-color: bisque;
   color: black;
+  
 }
 
-#apresentacao p {
-  font-size: 70px;
+.apresentacao p {
+  font-size: 50px;
   text-align: center;
   background-color: bisque;
 }
@@ -274,21 +281,21 @@ html {
 
   background-color: #6b7556;
   color: white;
-  padding: 1.2em 2em;
-  font-size: 80%;
+  padding: 12px 20px;
+  font-size: 16px;
   border-radius: 10px;
   transition: .5s;
   text-align: center;
-  transition: .5s;
+
 }
 
 .btnDefault:hover {
-  font-size: 60%;
+  font-size: 18px;
   color: bisque;
   background: #c87d87;
-  padding: 1.2em 2em;
+  padding: 16px 24px;
   transition: .5s;
-
+ text-align: center;
 
 }
 
@@ -308,19 +315,117 @@ html {
   font-weight: 500;
 }
 
-*/ #sobremim {
-  min-height: 100vh;
-  /* Ajuste da altura minima da tela */
-  background-color: #999b9e;
-  display: flex;
-  justify-content: center;
-  /* centraliza horizontal */
-  align-items: center;
-  /* centraliza vertical */
-  color: white;
-  font-size: 100px;
-  font-weight: 500;
+/* #region sobremim */
+#sobremim {
+    background: #fbead6;
+    padding: 80px 10%;
 }
+
+.sobre-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre-foto img {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sobre-conteudo {
+    flex: 1;
+}
+
+.sobre-conteudo h2 {
+    margin-bottom: 30px;
+}
+
+.sobre-conteudo p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+@media(max-width:768px) {
+    .sobre-container {
+        flex-direction: column;
+    }
+
+    .sobre-foto img {
+        width: 250px;
+        height: 350px;
+    }
+
+    .sobre-conteudo p {
+        font-size: 12px;
+    }
+}
+
+/* #endregion */
+
+
+/* #region instagram */
+#instagram{
+    background-color:#fbead6;
+    padding:80px 10%;
+    text-align: center;
+}
+#instagram h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#C87D87;
+    font-size:2rem;
+}
+
+.carrossel-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+}
+
+.instagram-galeria{
+    max-width: 1000px;
+    display:flex;
+    gap:20px;
+    overflow-x: auto;
+    overflow:hidden;
+    scroll-behavior:smooth;
+    width:900px;
+}
+
+.instagram-galeria img{
+    width:280px;
+    height:380px;
+    object-fit:cover;
+    border-radius:10px;
+    flex-shrink:0;
+}
+
+.seta{
+    border:none;
+    background:#6b7556;
+    color:white;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:20px;
+    transition:.3s;
+}
+
+.seta:hover{
+    background:#c87d87;
+}
+
+/* #endregion */
 
 /* #endregion */
 
