@@ -20,6 +20,9 @@
     font-size: 2rem;
   }
 
+ul, ol, li {
+  list-style: none;
+}
 
 }
 
@@ -35,10 +38,15 @@ html {
   scroll-behavior: smooth;
 }
 
-ul,
-ol {
-  list-style: none;
+#inicio,
+#projetos,
+#contato,
+#portfolio,
+#sobremim {
+  scroll-margin-top: 130px;
 }
+
+
 
 /* #endregion */
 
@@ -55,6 +63,8 @@ ol {
   display: flex;
   flex-direction: column;
 
+
+
   .navbar {
     display: flex;
     justify-content: flex-start;
@@ -67,6 +77,8 @@ ol {
     backdrop-filter: blur(1px);
     gap: 40px;
     position: fixed;
+    z-index: 9999 !important;
+    background-color: #C87D87 !important;
   }
 
   .LogoWhat {
@@ -107,7 +119,7 @@ ol {
       transition: all 0.3s ease;
     }
 
-    a:hover img{
+    a:hover img {
       transform: scale(1.20);
     }
 
@@ -216,7 +228,7 @@ ol {
   /* margin-top: 5vh; */
   background-color: var(--clr-tertiary);
 
-  h2{
+  h2 {
     padding-top: 5vh;
   }
 
@@ -235,7 +247,7 @@ ol {
   justify-content: center;
   /* align-items: center; */
   background-color: var(--clr-tertiary);
- 
+
 }
 
 .Imagens3-4 {
@@ -265,7 +277,7 @@ ol {
   background-color: var(--clr-tertiary);
   padding-top: 3vh;
   padding-bottom: 3vh;
-  
+
 }
 
 .apresentacao h2 {
@@ -294,8 +306,8 @@ ol {
   /* font-size: 100px; */
   /* font-weight: 500; */
   /* margin-top: 100px; */
-  
-  p{
+
+  p {
     font-size: 1.5rem;
   }
 
@@ -374,7 +386,6 @@ ol {
 #sobremim {
   background: #fbead6;
   padding: 100px 10%;
-  position: relative; 
 }
 
 .sobre-container {
@@ -411,7 +422,7 @@ ol {
   font-size: 2.8rem;
   /* margin-top: 0; */
   margin-bottom: 20px;
-  
+
 }
 
 .sobre-conteudo p {
@@ -445,7 +456,8 @@ ol {
     height: 360px;
     /* width: 300px; */
   }
-  .sobre-conteudo p{
+
+  .sobre-conteudo p {
     text-align: center;
   }
 
@@ -505,8 +517,8 @@ ol {
   scroll-behavior: smooth;
   padding: 10px;
   scroll-snap-align: center;
-  
-  
+
+
 }
 
 .instagram-galeria img {
@@ -538,16 +550,16 @@ ol {
 
 /* #region contato */
 
-#contato {
-  /* min-height: 100vh;
+/* #contato {
+  min-height: 100vh;
   background-color: #707988;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-size: 100px;
-  font-weight: 500; */
-}
+  font-weight: 500;
+} */
 
 .container-contato {
   width: 100%;
@@ -600,16 +612,32 @@ ol {
   margin: 10px;
 }
 
-.btnDefault {
-  padding: 10px 30px;
-  font-size: 25px;
-}
 
-li .btnWhatsapp {
-  display: inline-flex;
-  font-size: 25px;
-  padding: 10px 30px;
-  gap: 8px;
+.Button {
+
+  display: flex;
+  gap: 20px;
+
+  .btnDefault {
+    padding: 10px 30px;
+    font-size: 25px;
+  }
+
+  li .btnWhatsapp {
+    display: inline-flex;
+    font-size: 25px;
+    padding: 10px 30px;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .btnWhatsapp span {
+    display: inline-block;
+    transform: translateY(1.5px);
+  }
+
 }
 
 /* #endregion */
