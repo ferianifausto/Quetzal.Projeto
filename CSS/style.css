@@ -10,8 +10,9 @@
 
   h2 {
     color: #6b7556;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
+    font-weight: 800;
   }
 
   p {
@@ -59,10 +60,10 @@ ol {
     justify-content: flex-start;
     align-items: center;
     padding: 10px 200px;
-    margin: 20px;
-    border-radius: 12px;
-    background-color: rgba(251, 234, 214, 0.42);
-    width: calc(100% - 60px);
+    /* margin: 20px; */
+    /* border-radius: 12px; */
+    background-color: var(--clr-secondary);
+    width: 100%;
     backdrop-filter: blur(1px);
     gap: 40px;
     position: fixed;
@@ -99,16 +100,22 @@ ol {
 
   .LogoNav {
     a img {
-      width: 300px;
+      width: 150px;
       height: auto;
       display: block;
       order: 1;
+      transition: all 0.3s ease;
     }
+
+    a:hover img{
+      transform: scale(1.20);
+    }
+
   }
 
   .menu-links {
 
-    list-style: none;
+    /* list-style: none; */
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -181,7 +188,7 @@ ol {
 /* #endregion */
 
 
-/* #region section */
+/* #region inicio */
 #inicio {
 
   min-height: auto;
@@ -206,8 +213,12 @@ ol {
 }
 
 #projetos {
-  margin-top: 5vh;
+  /* margin-top: 5vh; */
+  background-color: var(--clr-tertiary);
 
+  h2{
+    padding-top: 5vh;
+  }
 
   p {
     text-align: center;
@@ -222,6 +233,9 @@ ol {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  /* align-items: center; */
+  background-color: var(--clr-tertiary);
+ 
 }
 
 .Imagens3-4 {
@@ -231,6 +245,7 @@ ol {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  /* align-items: center; */
 
 }
 
@@ -248,6 +263,9 @@ ol {
 /* #region portifolio */
 #portfolio {
   background-color: var(--clr-tertiary);
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  
 }
 
 .apresentacao h2 {
@@ -255,7 +273,7 @@ ol {
   /* font-size: 100px; */
   text-align: center;
   /* background-color: bisque; */
-  color: black;
+  /* color: black; */
 
 }
 
@@ -266,36 +284,41 @@ ol {
 }
 
 #portfolio ul li {
+  width: 99%;
+  padding-top: 5vh;
   min-height: 40vh;
-  /* Ajuste da altura minima da tela */
-  /* background-color: bisque; */
   display: flex;
   justify-content: center;
   /* centraliza horizontal */
   align-items: center;
-  font-size: 100px;
-  font-weight: 500;
+  /* font-size: 100px; */
+  /* font-weight: 500; */
   /* margin-top: 100px; */
+  
+  p{
+    font-size: 1.5rem;
+  }
 
 }
 
 #portfolio ul li img {
   width: 50%;
-  padding: 20px 70px;
-  margin-left: 20px;
-  margin-right: 100px;
+  /* padding: 20px 70px; */
+  /* margin-left: 20px; */
+  /* margin-right: 100px; */
 
 }
 
 
 .Projeto1 {
-  width: 30%;
+  width: 50%;
   font-size: 30px;
   /* background-color: bisque; */
   color: black;
-  margin-left: 100px;
-  margin-right: 20px;
-  gap: 10px;
+  /* margin-left: 100px; */
+  /* margin-right: 20px; */
+  /* gap: 10px; */
+  padding: 100px;
 
 }
 
@@ -305,14 +328,14 @@ ol {
 
 
 .Projeto2 {
-  width: 30%;
+  width: 50%;
   font-size: 30px;
   /* background-color: bisque; */
   color: black;
   /* margin-left: 5px; */
   /* margin-right: 80px; */
-  gap: 30px;
-  padding: 10px 5px;
+  /* gap: 30px; */
+  padding: 100px;
 }
 
 .Projeto2 h1 {
@@ -332,29 +355,17 @@ ol {
 }
 
 .btnDefault:hover {
-  font-size: 18px;
+  font-size: 30px;
   color: bisque;
   background: #c87d87;
-  padding: 16px 24px;
+  padding: 16px 27px;
   transition: .5s;
   text-align: center;
 
 }
 
 
-#contato {
-  min-height: 100vh;
-  /* Ajuste da altura minima da tela */
-  background-color: #707988;
-  display: flex;
-  justify-content: center;
-  /* centraliza horizontal  */
-  align-items: center;
-  /* centraliza vertical  */
-  color: white;
-  font-size: 100px;
-  font-weight: 500;
-}
+
 
 /* #endregion */
 
@@ -527,8 +538,19 @@ ol {
 
 /* #region contato */
 
+#contato {
+  /* min-height: 100vh;
+  background-color: #707988;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 100px;
+  font-weight: 500; */
+}
+
 .container-contato {
-  background: 100%;
+  width: 100%;
   background-color: var(--clr-tertiary);
   display: flex;
   align-items: center;
