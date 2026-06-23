@@ -1,4 +1,6 @@
-/* #region global */
+/* #region dispositivos grandes (notebook e desktop) */
+@media(min-width: 1200px) {
+    /* #region global */
 /* usar asterisco na frente das chaves indica a edição na página inteira */
 * {
   font-family: bahnschrift;
@@ -70,7 +72,7 @@ html {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 10px 300px;
+    padding: 10px 50px;
     /* margin: 20px; */
     /* border-radius: 12px; */
     background-color: var(--clr-quinary);
@@ -85,7 +87,7 @@ html {
   
   .LogoWhat {
     a img {
-      width: 80px;
+      width: 70px;
       height: auto;
       display: block;
       order: 3;
@@ -99,7 +101,7 @@ html {
 
   .LogoInsta {
     a img {
-      width: 49px;
+      width: 39px;
       height: auto;
       display: block;
       gap: 20px;
@@ -114,11 +116,11 @@ html {
 
   .LogoNav {
     a img {
-      width: 150px;
+      width: 120px;
       height: auto;
       display: block;
       order: 1;
-      margin-left: 75px;
+      margin-left: 55px;
       transition: all 0.3s ease;
     }
 
@@ -134,7 +136,7 @@ html {
     margin: 0;
     padding: 0;
     margin-left: auto;
-    margin-right: 80px;
+    margin-right: 100px;
     display: flex;
     gap: 30px;
 
@@ -144,7 +146,7 @@ html {
       text-decoration: none;
       font-family: sans-serif;
       font-weight: 650;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       transition: color 0.6s ease;
       display:inline-block;
       white-space: nowrap;
@@ -246,7 +248,7 @@ html {
 .Imagens1-2 {
 
   width: 100%;
-  height: 800px;
+  height: 400px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -258,7 +260,7 @@ html {
 .Imagens3-4 {
 
   width: 100%;
-  height: 800px;
+  height: 400px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -266,12 +268,14 @@ html {
 
 }
 
-.Imagens1-2 ul li {
-  height: 500px;
+.Imagens1-2 ul li img{
+  height: 350px;
+  
 }
 
-.Imagens3-4 ul li {
-  height: 500px;
+.Imagens3-4 ul li img{
+  height: 350px;
+  
 }
 
 /* #endregion */
@@ -647,3 +651,5 @@ html {
 }
 
 /* #endregion */
+
+}
