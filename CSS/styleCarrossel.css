@@ -1,7 +1,7 @@
 /* #region global */
-*{
-font-family: bahnschrift;
-  margin: 0;
+/* *{
+/* font-family: bahnschrift; */
+  /* margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -25,21 +25,21 @@ ul, ol, li {
 
 }
 
-}
+} */ */
 
 
 /* #endregion */
 /* #region Topo */
 
-:root {
+/* :root {
   --clr-primary: #F0C4CB;
   --clr-secondary: #C87D87;
   --clr-tertiary: #FBEAD6;
   --clr-quaternary: #6B7556;
   --clr-quinary: #E5BCA9;
-}
+} */
 
-html {
+/* html {
   scroll-behavior: smooth;
 }
 
@@ -48,25 +48,24 @@ html {
 #contato,
 #portfolio,
 #sobremim {
-  scroll-margin-top: 130px;
-}
-
+  scroll-margin-top: 130px; */
+/*  */
 
 
 /* #endregion */
 
 
 /* #region topo */
-.topo {
+/* .topo {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   /* background: url('../img/COZ\ 1.jpg'); */
-  background-color: var(--clr-quinary);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
+  /* background-color: var(--clr-quinary); */
+  /* background-position: center; */
+  /* background-size: cover; */
+  /* background-attachment: fixed; */
+  /* display: flex; */
+  /* flex-direction: column; */ 
 
 
 
@@ -78,11 +77,11 @@ html {
     /* margin: 20px; */
     /* border-radius: 12px; */
     background-color: var(--clr-quinary);
-    width: 100%;
+    /* width: 100%;
     backdrop-filter: blur(1px);
     gap: 10px;
     position: fixed;
-    z-index: 9999 !important;
+    z-index: 9999 !important; */
     /* background-color: #C87D87 !important; */
   }
   
@@ -90,16 +89,16 @@ html {
   .LogoWhat {
     a img {
       width: 80px;
-      height: auto;
+      /* height: auto;
       display: block;
       order: 3;
-      transition: all 0.3s ease;
+      transition: all 0.3s ease; */
     }
 
-    a:hover img {
-      transform: scale(1.20);
+    /* a:hover img {
+      transform: scale(1.20); */
     }
-  }
+  
 
   .LogoInsta {
     a img {
@@ -159,7 +158,7 @@ html {
       }
     }
   }
-}
+
 
 
 /* #endregion */
