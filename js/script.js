@@ -49,8 +49,8 @@ function validarEmail(email){
 
 //#endregion
 
-//#region Instagram 
-function rolarEsquerda() {
+// #region Instagram parte Sthefany
+function rolarEsquerdaIndex() {
     const galeria = document.getElementById("galeria");
 
     galeria.scrollBy({
@@ -59,13 +59,33 @@ function rolarEsquerda() {
     });
 }
 
-function rolarDireita() {
+function rolarDireitaIndex() {
     const galeria = document.getElementById("galeria");
 
     galeria.scrollBy({
         left: 300,
         behavior: "smooth"
     });
-}
+} 
+
 //#endregion
 
+// #region carrossel Portifolio
+
+// #region Portfolio
+function rolarDireitaPortfolio(botao) {
+    const galeria = botao.parentElement.querySelector('.instagram-galeria');
+    galeria.scrollBy({
+        left: 300,
+        behavior: 'smooth'
+    });
+}
+
+function rolarEsquerdaPortfolio(botao) {
+    const galeria = botao.parentElement.querySelector('.instagram-galeria');
+    galeria.scrollBy({
+        left: -300,
+        behavior: 'smooth'
+    });
+}
+//#endregion
