@@ -224,7 +224,7 @@
 
         p {
             /* font-size: 20px; */
-            
+
             font-weight: 100;
             text-align: center;
             /* Ajustes para o texto ficar 'aberto' */
@@ -233,9 +233,10 @@
             letter-spacing: 0.5px;
             /* Pequeno espaçamento entre as letras dá elegância */
 
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             /* Ajuste o tamanho conforme sua fonte */
             color: #333;
+
         }
     }
 
@@ -335,7 +336,7 @@
     #portfolio ul li img {
         width: auto;
         height: 35vh;
-        
+
         /* padding: 20px 70px; */
         /* margin-left: 20px; */
         /* margin-right: 100px; */
@@ -357,13 +358,13 @@
 
     }
 
-    .texto1{
+    .texto1 {
         display: flex;
         flex-direction: column;
         text-align: justify;
     }
 
-    .texto2{
+    .texto2 {
         display: flex;
         flex-direction: column;
         text-align: justify;
@@ -372,9 +373,9 @@
 
 
 
-    .Projeto1 h1{
+    .Projeto1 h1 {
         font-size: 2rem;
-       
+
     }
 
 
@@ -393,11 +394,11 @@
 
     .Projeto2 h1 {
         font-size: 2rem;
-        
-        
+
+
     }
 
-    .btnDefaultp1 {
+    .btnDefault1 {
 
         background-color: #6b7556;
         color: white;
@@ -410,9 +411,10 @@
         text-decoration: none;
 
 
+
     }
 
-    .btnDefaultp2 {
+    .btnDefault2 {
 
         background-color: #6b7556;
         color: white;
@@ -443,7 +445,7 @@
     }
 
     .btnDefaultp2:hover {
-       font-size: 16px;
+        font-size: 16px;
         color: #6b7556;
         background: #e5bca9;
         /* opacity: 90%; */
@@ -459,105 +461,14 @@
 
 
     /* #region sobremim */
-    #sobremim {
-        background: #fbead6;
-        padding: 100px 10%;
-    }
 
     .sobre-container {
-        max-width: 1200px;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 60px;
-    }
-
-    .sobre-foto {
-        flex: 0 0 300px;
-    }
-
-    .sobre-foto img {
-        width: 100%;
-        max-width: 320px;
-        height: auto;
-        /* ou 420px */
-        object-fit: cover;
-        border-top-left-radius: 150px;
-        border-top-right-radius: 150px;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
+        gap: 40px
     }
 
     .sobre-conteudo {
-        flex: 1;
-        max-width: 600px;
-    }
-
-    .sobre-conteudo h2 {
-        font-size: 2.8rem;
-        /* margin-top: 0; */
-        margin-bottom: 20px;
-
-    }
-
-    .sobre-conteudo p {
-        font-size: 1.1rem;
-        line-height: 1.8;
-        margin-bottom: 15px;
-        /* text-align: justify; */
-        color: #333;
-    }
-
-    /* media 1200 */
-    @media(max-width:1200px) {
-        .sobre-container {
-            gap: 40px
-        }
-
-        .sobre-conteudo {
-            max-width: 550px;
-        }
-    }
-
-    /* media 992 */
-    @media(max-width:992px) {
-        .sobre-container {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .sobre-foto img {
-            max-width: 280px;
-            height: 360px;
-            /* width: 300px; */
-        }
-
-        .sobre-conteudo p {
-            text-align: center;
-        }
-
-        .sobre-conteudo h2 {
-            font-size: 2rem;
-
-        }
-    }
-
-    /* media 768 */
-
-    @media(max-width:768px) {
-        .sobre-container {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .sobre-conteudo {
-            max-width: 100%;
-        }
-
-        .sobre-conteudo p {
-            text-align: left;
-        }
+        max-width: 550px;
+        text-align: justify;
     }
 
     /* #endregion */
@@ -648,12 +559,16 @@
     }
 
     .imagem img {
-        margin-left: 150px;
+        margin-left: 50px;
         margin-right: 50px;
-        width: 500px;
-        height: 500px;
+        width: 600px;
+        height: 400px;
         /* max-width: 100%; */
         border-radius: 10px;
+    }
+
+    .conteudo{
+        margin-left: -2rem;
     }
 
     .conteudo label {
@@ -664,29 +579,44 @@
         max-width: 100%;
         color: var(--cor-secudaria);
         margin: 20px 30px;
-        font-size: 30px;
+        font-size: 24x;
+        white-space: nowrap;
+        margin-left: -0.5rem;
+    }
+
+    .conteudo p {
+        font-size: 18px;
     }
 
     #frmContato {
         color: var(--cor-secudaria);
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        margin-top: 20px;
+        gap: 4px;
+        margin-top: 1rem;
+
     }
 
     #frmContato input[type="text"],
     #frmContato input[type="email"] {
         background-color: var(--cor-fundo);
-        padding: 10px;
+        padding: 7px;
         border: 1px solid var(--cor-secudaria);
         border-radius: 5px;
+        width: 400px;
+        display: flex;
     }
 
     .checkbox {
         display: flex;
         gap: 15px;
         margin: 10px;
+        margin-top: -1rem;
+    }
+
+    #frmContato p {
+        display: flex;
+        margin-top: 1rem;
     }
 
 
@@ -694,16 +624,17 @@
 
         display: flex;
         gap: 20px;
+        list-style: none;
 
         .btnDefault {
-            padding: 10px 30px;
-            font-size: 25px;
+            padding: 5px 25px;
+            font-size: 20px;
         }
 
         li .btnWhatsapp {
             display: inline-flex;
-            font-size: 25px;
-            padding: 10px 30px;
+            font-size: 20px;
+            padding: 5px 25px;
             gap: 14px;
             align-items: center;
             justify-content: center;
@@ -712,7 +643,7 @@
 
         .btnWhatsapp span {
             display: inline-block;
-            transform: translateY(1.5px);
+            transform: translateY(1px);
         }
 
     }
@@ -720,3 +651,47 @@
     /* #endregion */
 
 }
+
+/* media 992 */
+@media(max-width:992px) {
+  .sobre-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre-foto img {
+    max-width: 280px;
+    height: 360px;
+    /* width: 300px; */
+  }
+
+  .sobre-conteudo p {
+    text-align: center;
+  }
+
+  .sobre-conteudo h2 {
+    font-size: 2rem;
+
+  }
+}
+
+/* media 768 */
+
+@media(max-width:768px) {
+  .sobre-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-conteudo {
+    max-width: 100%;
+  }
+
+  .sobre-conteudo p {
+    text-align: left;
+  }
+}
+
+/* #endregion */
+
+
