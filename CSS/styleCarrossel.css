@@ -171,7 +171,7 @@ ul, ol, li {
    
   /* gap: 200px; */
    padding-top: 100px;
-   background: #E5BCA9;
+   background: #fbead6;
 
 
 
@@ -182,13 +182,29 @@ ul, ol, li {
 /* #region Carlos */
 #Projeto-Carlos{
 
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     gap: 200px;
    padding: 100px;
-   background: #E5BCA9;
+   background: #fbead6;
 
 
 
+}
+
+/* #endregion */
+
+/* #region footer */
+
+.footer{
+  background-color: var(--clr-quinary);
+  text-align: center;
+  overflow: hidden;
+  
+
+}
+
+.footer p{
+  margin-top: 0.5rem;
 }
 
 /* #endregion */
