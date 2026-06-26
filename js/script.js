@@ -3,7 +3,7 @@
 //Validação de formúlario
 
 function validarFormulario(){
-    alert("Função fucionando")
+    // alert("Função fucionando")
 
     if (document.getElementById('Nome').value.trim() == ""){
     alert("Digite o seu nome")
