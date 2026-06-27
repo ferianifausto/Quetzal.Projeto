@@ -21,9 +21,11 @@
     font-size: 2rem;
   }
 
-ul, ol, li {
-  list-style: none;
-}
+  ul,
+  ol,
+  li {
+    list-style: none;
+  }
 
 }
 
@@ -81,8 +83,8 @@ html {
     z-index: 9999 !important;
     /* background-color: #C87D87 !important; */
   }
-  
-  
+
+
   .LogoWhat {
     a img {
       width: 80px;
@@ -146,7 +148,7 @@ html {
       font-weight: 650;
       font-size: 1.8rem;
       transition: color 0.6s ease;
-      display:inline-block;
+      display: inline-block;
       white-space: nowrap;
 
       &:hover {
@@ -596,17 +598,18 @@ html {
 
 /* #region footer */
 
-.footer{
+.footer {
   background-color: var(--clr-quinary);
   text-align: center;
   overflow: hidden;
-  
 
 }
 
-.footer p{
-  margin-top: 0.5rem;
+.footer p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 200;
 }
 
 /* #endregion */
-
