@@ -432,7 +432,7 @@
     .conteudo p {
         font-size: 18px;
     }
-
+   
     #frmContato {
         color: var(--cor-secudaria);
         display: flex;
