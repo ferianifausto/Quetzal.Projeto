@@ -1,6 +1,22 @@
 /* #region global */
 /* usar asterisco na frente das chaves indica a edição na página inteira */
+
+/* 1. Trava o overflow horizontal global da página */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+ 
+/* 2. Impede que imagens ou divs estourem a largura dos contêineres */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 * {
+
   font-family: bahnschrift;
   margin: 0;
   padding: 0;
@@ -156,6 +172,61 @@ html {
       }
     }
   }
+
+/* Menu responsivo */
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+@media (max-width: 991.98px) {
+
+    .navbar {
+        padding: 0 1.5rem;
+    }
+
+    .LogoNav {
+        margin-right: auto;
+    }
+
+    .LogoNav a img {
+        width: 12rem;
+        margin-left: 0;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+
+    #menuNavegacao {
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        width: 100%;
+        padding: 1.5rem;
+
+        background-color: var(--clr-quinary);
+    }
+
+    .menu-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+        margin: 0;
+    }
+
+    .LogoWhat,
+    .LogoInsta {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+    .LogoInsta a img {
+        margin-right: 0;
+    }
+}
+
 }
 
 :root {
@@ -242,7 +313,10 @@ html {
   }
 }
 
-#projetos {
+/* #endregion */
+
+/* #region ambientes */
+#ambientes {
   /* margin-top: 5vh; */
   background-color: var(--clr-tertiary);
 
@@ -250,33 +324,66 @@ html {
     padding-top: 30px;
   }
 
-
 }
 
-.Imagens1-2 {
+/* Aplicação do hover */
 
-  padding-top: 10px;
-  width: auto;
-  height: 55vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: var(--clr-tertiary);
-  gap: 10px;
-
+.Galeria .col-12 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.Imagens3-4 {
+.Galeria img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 2%;
+}
 
-  padding-top: 10px;
-  width: auto;
-  height: 55vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: var(--clr-tertiary);
-  gap: 10px;
+.Galeria .col-12:hover img {
+    transform: scale(1.03);
+    
+}
 
+
+
+.Galeria .col-12::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) 60%);
+    border-radius: 2%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.Galeria .col-12:hover::after {
+    opacity: 1;
+}
+
+/* Aplicação do span */
+
+.Galeria .col-12 span {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+
+    opacity: 0;
+    transform: translateX(-30px) translateY(-50%);
+
+    z-index: 2;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.Galeria .col-12:hover span {
+    opacity: 1;
+    transform: translateX(0) translateY(-50%);
 }
 
 /* #endregion */
