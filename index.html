@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <!-- Neste caso, o bootstrap está sendo usado via CDN, não localmente -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +16,11 @@
 
 <body>
     <!-- Cabeçalho -->
-   <div class="topo">
+    <div class="topo">
 
-    <nav class="navbar navbar-expand-lg">
+       <nav class="navbar navbar-expand-lg">
+
+    <div class="container">
 
         <!-- LOGO -->
         <div class="LogoNav">
@@ -27,10 +30,8 @@
         </div>
 
         <!-- BOTÃO HAMBÚRGUER -->
-        <button 
-            class="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
             data-bs-target="#menuNavegacao"
             aria-controls="menuNavegacao"
             aria-expanded="false"
@@ -40,19 +41,16 @@
 
         </button>
 
-
-        <!-- TUDO QUE FICA DENTRO DO MENU -->
+        <!-- MENU -->
         <div class="collapse navbar-collapse" id="menuNavegacao">
 
-            <!-- LINKS -->
             <ul class="menu-links">
                 <li><a href="#inicio">Início</a></li>
-                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#ambientes">Ambientes</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="#sobremim">Sobre Mim</a></li>
             </ul>
-
 
             <!-- WHATSAPP -->
             <div class="LogoWhat">
@@ -60,7 +58,6 @@
                     <img src="./img/WhatsAppLogo.png" alt="WhatsApp Logo">
                 </a>
             </div>
-
 
             <!-- INSTAGRAM -->
             <div class="LogoInsta">
@@ -71,34 +68,22 @@
 
         </div>
 
-    </nav>
+    </div>
 
-</div>
+</nav>
 
-        <!-- REDES SOCIAIS -->
-        <div class="LogoWhat">
-            <a href="#">
-                <img src="./img/WhatsAppLogo.png" alt="WhatsApp Logo">
-            </a>
-        </div>
+    </div>
 
-        <div class="LogoInsta">
-            <a href="#">
-                <img src="./img/InstagramLogo.png" alt="Instagram Logo">
-            </a>
-        </div>
-
-    </nav>
-
-</div>
-    
 
     <!-- Seção do site representadas pela barra de navegação -->
     <section id="inicio">
-        <p>Transformar espaços vai muito além da estética. Acreditamos que cada ambiente deve refletir
+
+        <p>
+            Transformar espaços vai muito além da estética. Acreditamos que cada ambiente deve refletir
             a essência, os hábitos e a personalidade de quem o utiliza. Por isso, desenvolvemos
             projetos de interiores personalizados, pensados para unir funcionalidade,
-            conforto e identidade em cada detalhe.</p>
+            conforto e identidade em cada detalhe.
+        </p>
 
     </section>
 
@@ -132,7 +117,7 @@
 
                 <div class="col-12 col-md-6">
                     <img class="Galeira-img3 img-fluid" src="./img/TÂNIA 2024/TÂNIA 2024/7.jpg" alt="img3">
-                    <span>Ambiente2</span>  
+                    <span>Ambiente2</span>
                 </div>
 
                 <div class="col-12 col-md-6">
